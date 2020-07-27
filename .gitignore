@@ -1,5 +1,6 @@
-*.pdf
+# *.pdf
+# figs/
 
 *k_keq_*
 
-figs/
+note.*
