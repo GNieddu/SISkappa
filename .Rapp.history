@@ -1,0 +1,261 @@
+mass
+max(mass, na.rm=TRUE)
+plot(height, mass, xlim=c(0, 500), ylim=c(0, 500))
+plot(height, mass)
+plot(height, mass, xlim=c(0, 250), ylim=c(0, 200))
+plot(height, mass, xlim=c(40, 250), ylim=c(0, 200))
+plot(height, mass, main="No Jabba", xlab="Mass (Kg)", ylab="Height (cm)", xlim=c(40,250), ylim=c(0,200))
+names(starwars)
+table(homeworld)
+pie(table(homeworld))
+barplot(table(homeworld))
+?starwars
+names(starwars)
+barplot(table(eye_color))
+barplot(table(birth_year))
+barplot(table(species))
+?starwars
+barplot(table(vehicles))
+barplot(table(films))
+cor(height,mass)
+cor(height, mass)
+attach(starwars)
+cor(starwars[,2], starwars[,3])
+c(starwars[,2],rows=5)
+c(starwars[,3],rows=5)
+names(starwars)
+boxplot(mass~species, ylab="Mass")
+boxplot(mass~species, ylab="Mass",ylim=c(-10,200))
+boxplot(mass~species[1:10], ylab="Mass",ylim=c(-10,200))
+boxplot(mass~species, ylab="Mass",ylim=c(-10,200))
+boxplot(height~species, ylab="Height",ylim=c(0,250))
+boxplot(height~species, ylab="Height",ylim=c(50,250))
+boxplot(height~species, ylab="Height",ylim=c(60,250))
+boxplot(height~species, ylab="Height",ylim=c(70,230))
+plot(height, mass, col=species, pch=as.numeric(species), main="No Jabba with Symbols", xlab="Mass (Kg)", ylab="Height (cm)", xlim=c(40,250), ylim=c(0,200))
+plot(height, mass, col=species, pch=species, main="No Jabba with Symbols", xlab="Mass (Kg)", ylab="Height (cm)", xlim=c(40,250), ylim=c(0,200))
+plot(height, mass, pch=as.numeric(species), main="No Jabba with Symbols", xlab="Mass (Kg)", ylab="Height (cm)", xlim=c(40,250), ylim=c(0,200))
+plot(height, mass, pch=as.numeric(species))
+plot(height, mass)
+plot(height, mass, col=species)
+plot(height, mass)
+?storms
+install.packages(datasets)
+install.packages('datasets)
+install.packages(datasets)
+?starwars
+attach(diamonds)
+MyMAT<-matrix(c(1,2,3,4,5,6),nrow=2,byrow=F)
+MyMat
+MyMAT
+MyMAT<-matrix(c(1,2,3,4,5,6),nrow=2,byrow=T)
+MyMAT
+MyMAT<-matrix(c(1,2,3,4,5,6),nrow=2,byrow=False)
+MyMAT<-matrix(c(1,2,3,4,5,6),nrow=2,byrow=FALSE)
+MyMAT
+MyMAT<-matrix(c(1,2,3,4,5,6),nrow=2,byrow=TRUE)
+MyMAT
+MyMAT<-matrix(c(1,2,3,4,5,6),nrow=2,byrow=F)
+MyMAT
+library(MASS)
+library(beav1)
+attach(beav1)
+?beav1
+beav1
+names(beav1)
+summarize(temp, mean_temp=mean(temp))
+library(tidyverse)
+install.packages('tidyverse')
+library(tidyverse)
+summarize(temp, mean_temp=mean(temp))
+library(nycflights13)
+names(beav1)
+library(galaxies)
+attach(galaxies)
+attach(mammals)
+names(mammals)
+mammals
+attach(Boston)
+names(Boston)
+?Boston
+summarize(Boston)
+summarize(Boston, dunno=mean(tax))
+tax
+summarize(Boston, tax_per_10k=mean(tax))
+tax_per_10k
+age
+crim
+indus
+chas
+nox
+dis
+by_river<-group_by(tax, chas)
+by_river<-group_by(tax, age, zn)
+summarize(Boston)
+Bgroup<-group_by(Boston, tax, age, zn)
+summarize(Bgroup)
+summarize(Bgroup, Bgroup_mean=mean(Bgroup))
+summarize(Bgroup, Bgroup_mean=mean(Bgroup), na.rm=TRUE)
+summarize(Bgroup, Bgroup_mean=mean(Bgroup, na.rm=TRUE))
+summarize(Bgroup, tax_mean=mean(tax, na.rm=TRUE))
+Bgroup<-group_by(Boston, medv, age, zn)
+summarize(Bgroup)
+Bgroup<-group_by(Boston, medv, age, dis)
+summarize(Bgroup)
+Boston
+Boston[1,]
+by_zone<-group_by(Boston,zone,tax)
+by_zone<-group_by(Boston,zn,tax)
+by_zone
+summarize(by_zone, mean_tax=mean(tax))
+sum_zone<-summarize(by_zone, mean_tax=mean(tax))
+some_zone
+sum_zone
+sum_zone[,]
+sum_zone[10:20,]
+sum_zone[20:25,]
+sum_zone[50:55,]
+by_zone
+sum_zone<-summarize(by_zone, max_tax=max(tax))
+maxtax<-summarize(by_zone, max_tax=max(tax))
+maxtax
+sum_zone<-summarize(by_zone, mean_tax=mean(tax))
+maxtax<-summarize(by_zone, max_tax=max(tax))
+maxtax
+sum_zone-maxtax
+mean(Boston)
+mean(Boston.tax)
+mean(tax)
+sum_zone<-summarize(by_zone, mean_tax=mean(tax))
+sum_zone
+tax
+sum_zone
+sum_zone[40,]
+sum_zone[30,]
+sum_zone[20,]
+sum_zone[21,]
+sum_zone[25,]
+sum_zone[27,]
+sum_zone[28,]
+sum_zone[29,]
+sum_zone[30,]
+sum_zone[31,]
+sum_zone[32,]
+mean(sum_zone[1:29,1])
+sum_zone[1:29,1]
+mean(sum_zone[1:29,1])
+mean(sum_zone[1:29,2])
+plot(sum_zone)
+plot(sum_zone[1:29,1])
+plot(sum_zone[1:29,2])
+plot(sum_zone[1:29,2],sum_zone[1:29,2])
+sum_zone
+sum_zone<-summarize(by_zone, mean_tax=mean(tax))
+sum_zone
+by_zone
+by_zone<-group_by(Boston,zn)
+by_zone
+sum_zone<-summarize(by_zone, mean_tax=mean(tax))
+sum_zone
+maxtax<-summarize(by_zone, max_tax=max(tax))
+maxtax
+maxtax-sum_zone
+mean(maxtax-sum_zone)
+mean_util<-maxtax-sum_zone
+mean(mean_util)
+mean(mean_util[,2])
+maxtax2 <- Boston %>% group_by(zn) %>% summarize(max_tax=max(tax))
+maxtax2
+maxtax
+diff_method <- maxtax=maxtax2
+diff_method <- maxtax[,2]=maxtax2[,2]
+diff_method <- maxtax-maxtax2
+mean(diff_method[,2])
+cor(maxtax2)
+cor(sum_zone)
+library(ggplot2)
+Boston %>% ggplot(aes(x=zn, fill=zn)) + geom_bar()
+Boston %>% ggplot(aes(x=nox), fill=zn) + geom_bar() + coord_polar()
+by_zone<-group_by(Boston,zn)
+by_zone
+sum_nox<-summarize(by_zone, mean_nox=mean(nox))
+sum_nox
+cor(sum_nox)
+ggplot(geom_point(mapping = aes(x=sum_nox[,1], y=sum_nox[,2])))
+plot(x=sum_nox[,1], y=sum_nox[,2])
+plot(sum_nox)
+Boston %>% ggplot(aes(x=zn, y=medv)
+Boston %>% ggplot(aes(x=zn, y=medv))
+plot(x=zn, y=medv)
+sum_val<-summarize(by_zone, mean_val=mean(medv))
+sum_val
+plot(sum_val)
+cor(sum_val)
+cor(Boston)
+cor(nox,medv)
+plot(nox,medv)
+plot(medv,nox)
+Bgroup<-group_by(Boston, medv, age, dis)
+summarize(Bgroup)
+summarize(Bgroup, tax_mean=mean(tax, na.rm=TRUE))
+by_zone<-group_by(Boston,zn)
+by_zone
+sum_zone<-summarize(by_zone, mean_tax=mean(tax))
+sum_zone
+maxtax<-summarize(by_zone, max_tax=max(tax))
+maxtax
+mean_util<-maxtax-sum_zone
+mean(mean_util[,2])
+cor(zn, medv)
+cor(maxtax2)
+cor(sum_zone)
+install.packages("tidyr")
+.libPaths()
+library(tidyr)
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("reticulate")
+rm(list=ls())#
+#
+library(tidyr)#
+library(dplyr)#
+library(ggplot2)
+require("reticulate")#
+source_python("pickle_reader.py")
+library(reticulate)
+install.packages("reticulate")
+install.packages("/Users/MegGarr/Downloads/reticulate_1.18.tgz",repos=NULL)
+n
+getwd()
+ls
+setwd("/Users/MegGarr/Documents/SISkappa/")
+source("mkPDF_figs.R")
+getwd()
+read.CSV("./data/out/SI/SIk_keq_2p043Em07_Neq_2p593E02")
+read.csv("./data/out/SI/SIk_keq_2p043Em07_Neq_2p593E02")
+source("mkPDF_figs.R")
+rm(list=ls())
+source("mkPDF_figs.R")
+source("mkPDF_figs.R")
+SI.df %>% head()
+source("mkPDF_figs.R")
+source("mkPDF_figs.R")
+source("mkPDF_figs.R")
+source("mkPDF_figs.R")
+SI.df %>% head()
+ggplot(SI.df) + geom_line(aes(x=V1,y=V3))
+read.csv("./data/out/SI/SIk_keq_1p172Em05_Neq_4p175E02")
+read.csv("./data/out/SI/SIk_keq_1p172Em05_Neq_1p172E04")
+SI.df <- read.csv("./data/out/SI/SIk_keq_1p172Em05_Neq_1p172E04",#
+                  header = FALSE)#
+#
+ggplot(SI.df) + geom_point(aes(x=V2,y=V3))
+SI.df <- read.csv("./data/out/SI/SIk_keq_1p172Em05_Neq_1p172E04",#
+                  header = FALSE)#
+#
+ggplot(SI.df) + geom_point(aes(x=V1,y=V2))
+ggplot(SI.df) + geom_histogram(aes(x=V2))
+ggplot(SI.df) + geom_histogram(aes(x=V2,y=density))
+ggplot(SI.df) + geom_histogram(aes(x=V2,y=..density..))
+SI.df[[1,3]]
+SI.df[[1,4]]
